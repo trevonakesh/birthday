@@ -1,5 +1,6 @@
 'use client';
 
+import './globals.css'
 import Head from 'next/head';
 import Card from './components/Card';
 import { useEffect } from 'react';
@@ -42,7 +43,7 @@ export default function Home() {
   return (
     <>
       {/* Black Background */}
-      <div className="min-h-screen flex flex-col items-center justify-center text-center relative overflow-hidden bg-black">
+      <div className="min-h-screen flex flex-col items-center justify-center text-center relative overflow-hidden">
         <Head>
           <title>Happy 19th Birthday!</title>
         </Head>
@@ -61,7 +62,7 @@ export default function Home() {
                 transform: `rotate(${Math.random() * 360}deg)`, // Random rotation
               }}
             >
-             ❤️
+             💗
             </div>
           ))}
         </div>
@@ -69,18 +70,18 @@ export default function Home() {
         {/* Main Content */}
         <main className="relative z-10 space-y-6">
           <h1 className="text-6xl font-bold text-pink-700 animate-bounce">Happy 19th Birthday!</h1>
-          <p className="text-2xl text-purple-800">
+          <p className="text-2xl text-purple-200">
             To my amazing girlfriend, <br />
             You light up my world every single day. ❤️
           </p>
-          <p className="text-xl text-gray-800">
+          <p className="text-xl text-gray-200">
             I hope this year brings you endless joy, love, and unforgettable memories.
           </p>
           <Card />
         </main>
 
         {/* Footer */}
-        <footer className="mt-10 text-sm text-gray-600 relative z-10">
+        <footer className="mt-10 text-sm text-gray-400 relative z-10">
           Made with ❤️ by your baby.
         </footer>
       </div>

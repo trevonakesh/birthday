@@ -14,15 +14,25 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #000000;
     --foreground: #ededed;
   }
 }
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/* Define the keyframes animation */
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Create a utility class for the animation */
+.animate-blink {
+  animation: blink 4.0s infinite;
 }
